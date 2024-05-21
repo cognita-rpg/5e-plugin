@@ -10,10 +10,10 @@ export default defineConfig({
     copyPublicDir: false,
     lib: {
       entry: path.resolve(__dirname, "lib/index.tsx"),
-      name: "cognita-plugin-template",
+      name: "5e-plugin",
       formats: ["cjs"],
       fileName(format, entryName) {
-        return `${entryName}.cognita-plugin-template.js`;
+        return `${entryName}.5e-plugin.js`;
       },
     },
     rollupOptions: {

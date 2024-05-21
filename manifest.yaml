@@ -1,13 +1,13 @@
 metadata:
-  slug: plugin-template
-  name: "Cognita Plugin Template"
+  slug: 5e-plugin
+  name: "D&D 5th Edition"
   author: "Dax Harris"
   version: "0.0.0"
-  image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMYSmkIUjDb3ccq1PXtErhUnXRFxV-66EJCkRsSmkIjbNgrwNzXjC3UAtYWcGD2ZvGt7JofTX3VYsHICVPsFXWd7Sj36rlNdtCVl0KZoHOqU8pdUdTLnSYSVut-3mafGWe1jk4xw1Nekk/s1600/Black-And-White-Small-Cat-HD-Wallpaper.jpg"
+  image: "https://logos-world.net/wp-content/uploads/2021/12/DnD-Logo-700x394.png"
   urls:
-    repository: "https://github.com/cognita-rpg/cognita-plugin-template"
+    repository: "https://github.com/cognita-rpg/5e-plugin"
 
 exports:
   testFunction:
-    file: "cognita-plugin-template/dist/index.cognita-plugin-template.js"
+    file: "5e-plugin/dist/index.5e-plugin.js"
     function: "testFunction"
