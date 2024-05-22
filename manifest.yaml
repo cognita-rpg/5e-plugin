@@ -3,7 +3,7 @@ metadata:
   name: "D&D 5th Edition"
   author: "Dax Harris"
   version: "0.0.0"
-  image: "https://logos-world.net/wp-content/uploads/2021/12/DnD-Logo-700x394.png"
+  image: "https://i.etsystatic.com/22360457/r/il/447352/2199635638/il_794xN.2199635638_svz8.jpg"
   urls:
     repository: "https://github.com/cognita-rpg/5e-plugin"
 
