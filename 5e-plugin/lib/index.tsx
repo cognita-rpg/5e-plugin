@@ -1,5 +1,3 @@
-import { Text } from "@mantine/core";
+import { TestDocumentForm, TestDocumentText } from "./templates/TestDocument";
 
-export function testFunction() {
-  return <Text>This is mantine text!</Text>;
-}
+export { TestDocumentForm, TestDocumentText };

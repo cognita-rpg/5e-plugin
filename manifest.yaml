@@ -8,6 +8,24 @@ metadata:
     repository: "https://github.com/cognita-rpg/5e-plugin"
 
 exports:
-  testFunction:
+  TestDocumentForm:
+    type: "component"
     file: "5e-plugin/dist/index.5e-plugin.js"
-    function: "testFunction"
+    function: "TestDocumentForm"
+  TestDocumentText:
+    type: "component"
+    file: "5e-plugin/dist/index.5e-plugin.js"
+    function: "TestDocumentText"
+
+features:
+  - type: "article-template"
+    required_exports:
+      - TestDocumentForm
+      - TestDocumentText
+    name: "Test Document"
+    description: "A document for testing"
+    tags:
+      - test
+      - d&d
+    form_renderer: TestDocumentForm
+    text_renderer: TestDocumentText
