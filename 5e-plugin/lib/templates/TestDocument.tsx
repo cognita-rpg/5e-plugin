@@ -4,13 +4,19 @@ import { FileTemplateFormProps, FileTemplateTextProps } from "cognita-sdk";
 export function TestDocumentForm(
   props: FileTemplateFormProps<{ field: string }>
 ) {
-  return (
-    <TextInput
-      value={props.value.field}
-      onChange={(event) => props.onChange({ field: event.target.value })}
-      label="Test Field"
-    />
-  );
+  if (props) {
+    return (
+      <TextInput
+        value={props.value.field}
+        onChange={(event) => props.onChange({ field: event.target.value })}
+        label="Test Field"
+      />
+    );
+  } else {
+    console.log(props);
+    return <>ERR</>;
+  }
+  
 }
 
 export function TestDocumentText(
