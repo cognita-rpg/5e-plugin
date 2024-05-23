@@ -6,11 +6,14 @@ export function TestDocumentForm(
 ) {
   if (props) {
     return (
-      <TextInput
-        value={props.value.field}
-        onChange={(event) => props.onChange({ field: event.target.value })}
-        label="Test Field"
-      />
+      <span>
+        <TextInput
+          value={props.value.field}
+          onChange={(event) => props.onChange({ field: event.target.value })}
+          label="Test Field"
+        />
+        {props.value.field}
+      </span>
     );
   } else {
     console.log(props);
