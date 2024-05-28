@@ -8,22 +8,21 @@ export function TestDocumentForm(
     return (
       <span>
         <TextInput
-          value={props.value.field}
+          value={props.value?.field ?? ""}
           onChange={(event) => props.onChange({ field: event.target.value })}
           label="Test Field"
         />
-        {props.value.field}
+        {props.value?.field ?? ""}
       </span>
     );
   } else {
     console.log(props);
     return <>ERR</>;
   }
-  
 }
 
 export function TestDocumentText(
   props: FileTemplateTextProps<{ field: string }>
 ) {
-  return <Text>Content: {props.data.field}</Text>;
+  return <Text>Content: {props.data?.field ?? ""}</Text>;
 }
