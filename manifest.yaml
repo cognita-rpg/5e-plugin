@@ -16,6 +16,9 @@ exports:
     type: "component"
     file: "5e-plugin/dist/index.5e-plugin.js"
     function: "TestDocumentText"
+  FifthEditionData:
+    type: "asset"
+    file_selector: "assets/5e-data/**/*.json"
 
 features:
   - type: "article-template"
