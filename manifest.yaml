@@ -25,6 +25,7 @@ features:
     required_exports:
       - TestDocumentForm
       - TestDocumentText
+      - FifthEditionData
     name: "Test Document"
     description: "A document for testing"
     tags:
